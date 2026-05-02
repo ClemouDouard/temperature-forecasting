@@ -1,0 +1,11 @@
+{
+    "processed_dir": "data/processed",
+    "models_dir": "models",
+    "reports_dir": "reports",
+    "seed": 42,
+    "epochs": 40,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "patience": 6,
+    "ridge_alpha": 1.0
+}

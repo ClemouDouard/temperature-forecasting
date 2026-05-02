@@ -1,0 +1,75 @@
+{
+    "config": {
+        "city": "paris",
+        "raw_data_path": "data/raw/weather_Paris_hourly.csv",
+        "processed_dir": "data/processed",
+        "input_window": 24,
+        "forecast_horizon": 6,
+        "target": "temperature_2m",
+        "base_features": [
+            "temperature_2m",
+            "relative_humidity_2m",
+            "pressure_msl",
+            "cloud_cover",
+            "wind_speed_10m",
+            "precipitation"
+        ],
+        "train_ratio": 0.7,
+        "val_ratio": 0.15
+    },
+    "feature_columns": [
+        "temperature_2m",
+        "relative_humidity_2m",
+        "pressure_msl",
+        "cloud_cover",
+        "wind_speed_10m",
+        "precipitation",
+        "hour_sin",
+        "hour_cos",
+        "day_sin",
+        "day_cos"
+    ],
+    "target": "temperature_2m",
+    "input_window": 24,
+    "forecast_horizon": 6,
+    "shapes": {
+        "X_train": [
+            24524,
+            24,
+            10
+        ],
+        "y_train": [
+            24524
+        ],
+        "X_val": [
+            5255,
+            24,
+            10
+        ],
+        "y_val": [
+            5255
+        ],
+        "X_test": [
+            5256,
+            24,
+            10
+        ],
+        "y_test": [
+            5256
+        ]
+    },
+    "date_ranges": {
+        "train": [
+            "2021-01-02T05:00:00.000000",
+            "2023-10-21T00:00:00.000000"
+        ],
+        "val": [
+            "2023-10-21T01:00:00.000000",
+            "2024-05-26T23:00:00.000000"
+        ],
+        "test": [
+            "2024-05-27T00:00:00.000000",
+            "2024-12-31T23:00:00.000000"
+        ]
+    }
+}

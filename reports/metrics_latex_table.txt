@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Performances des modèles sur l'ensemble de test.}
+\label{tab:resultats_temperature}
+\begin{tabular}{lccc}
+\toprule
+ & MAE (°C) & RMSE (°C) & $R^2$ \\
+\midrule
+GRU & 1.221 & 1.590 & 0.938 \\
+MLP & 1.287 & 1.664 & 0.932 \\
+Ridge & 1.349 & 1.738 & 0.926 \\
+CNN 1D & 1.833 & 2.336 & 0.865 \\
+Baseline persistante & 3.012 & 3.851 & 0.634 \\
+\bottomrule
+\end{tabular}
+\end{table}
