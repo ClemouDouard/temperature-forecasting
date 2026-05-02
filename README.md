@@ -45,40 +45,6 @@ Additional cyclic time features are added during preprocessing:
 
 The raw data are not stored in the repository. They can be downloaded by running the data download script.
 
-## Repository structure
-
-```text
-temperature-forecasting-fidle/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── LICENSE
-│
-├── data/
-│   ├── raw/
-│   │   └── .gitkeep
-│   └── processed/
-│       └── .gitkeep
-│
-├── figures/
-│   └── .gitkeep
-│
-├── reports/
-│   └── .gitkeep
-│
-├── models/
-│   └── .gitkeep
-│
-└── src/
-    ├── __init__.py
-    ├── download_data.py
-    ├── preprocess.py
-    ├── models.py
-    ├── train.py
-    ├── evaluate.py
-    └── plot_results.py
-```
-
 ## Usage
 
 Run the following commands:
